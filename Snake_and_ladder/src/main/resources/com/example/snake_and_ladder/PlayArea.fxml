@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snake_and_ladder.PlayAreaController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <ImageView fitHeight="500" fitWidth="500" layoutX="280" layoutY="0">
+            <image>
+                <Image url="@gameBoard.jpg"/>
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="player1" fitHeight="50" fitWidth="30" layoutX="230" layoutY="450">
+            <image>
+                <Image url="@red.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="player2" fitHeight="50" fitWidth="20" layoutX="250" layoutY="450">
+            <image>
+                <Image url="@green.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fitHeight="110" fitWidth="110" layoutX="100" layoutY="130" onMouseClicked="#roll">
+            <image>
+                <Image url="@dice.jpg"/>
+            </image>
+        </ImageView>
+
+        <Text fx:id="changeturn" layoutY="100" layoutX="120" text = "Player 1's Turn"></Text>
+        <Text fx:id="number" layoutY="240" layoutX="150"></Text>
+
+        <ImageView fitHeight="60" fitWidth="60" layoutX="45" layoutY="320">
+            <image>
+                <Image url="@red.png"/>
+            </image>
+        </ImageView>
+        <Text layoutX = "100" layoutY="350" text="Player 1"></Text>
+        <Text layoutX = "100" layoutY="430" text="Player 2"></Text>
+        <ImageView fitHeight="60" fitWidth="30" layoutX="50" layoutY="400">
+            <image>
+                <Image url="@green.png"/>
+            </image>
+        </ImageView>
+    </children>
+
+</AnchorPane>
